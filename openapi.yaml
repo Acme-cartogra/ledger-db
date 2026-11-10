@@ -1,0 +1,24 @@
+openapi: "3.0.3"
+info:
+  title: "ledger-db"
+  version: "1.0.0"
+servers:
+  - url: "http://localhost:8121"
+paths:
+  "/ledger-dbs":
+    get:
+      summary: "List ledger-dbs"
+      responses:
+        "200":
+          description: OK
+    post:
+      summary: "Create ledger-db"
+      responses:
+        "200":
+          description: OK
+  "/ledger-dbs/{id}":
+    get:
+      summary: "Get ledger-db by ID"
+      responses:
+        "200":
+          description: OK
